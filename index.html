@@ -175,6 +175,71 @@ nav.scrolled{background:rgba(255,250,247,0.93);backdrop-filter:blur(16px);border
 .c-link:hover{background:rgba(255,255,255,0.25);transform:translateY(-2px);}
 
 footer{background:var(--deep);text-align:center;padding:1.2rem;font-size:0.7rem;color:rgba(255,255,255,0.17);letter-spacing:0.06em;}
+
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 6rem 1.8rem 3rem;
+    text-align: center;
+    gap: 2.5rem;
+    min-height: auto;
+  }
+  .hero-cta-row { justify-content: center; }
+  .hero-right { order: -1; }
+  .hero-photo { width: 240px; height: 300px; margin: 0 auto; border-radius:130px 130px 100px 100px; }
+  .hero-photo-badge { right: -10px; bottom: 16px; }
+  .hero-name { font-size: 3.5rem; }
+
+  .stats-bar { grid-template-columns: repeat(2,1fr); padding: 2rem 1.8rem; gap: 1.2rem; }
+  .stat-num { font-size: 1.9rem; }
+
+  .sec { padding: 4rem 1.8rem; }
+
+  .about { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-right { order: -1; }
+
+  .exp-item { grid-template-columns: 1fr; gap: 0.4rem; }
+  .exp-date { margin-bottom: 2px; }
+
+  .tools { padding: 4rem 1.8rem; }
+
+  .project-block {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.8rem;
+  }
+  .project-block.alt .lounge-photo-side { order: -1; }
+  .lounge-photo-side {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    height: auto;
+  }
+  .lp-tall { grid-row: auto; }
+  .lp-tile img { height: 160px; }
+  .yt-embed { aspect-ratio: 16/9; width: 100%; }
+
+  .podcast { padding: 4rem 1.8rem; }
+  .podcast-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+
+  .certs { padding: 4rem 1.8rem; }
+  .certs-flow { grid-template-columns: 1fr; }
+
+  .bottom-strip {
+    grid-template-columns: 1fr;
+    padding: 3.5rem 1.8rem;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .contact-side { text-align: center; }
+  .contact-links { justify-content: center; }
+
+  .ll-stats { gap: 0.6rem; }
+}
+
 </style>
 </head>
 <body>
